@@ -1,0 +1,385 @@
+/* misc */
+.fullHeight {
+	height: 100%;
+	position: absolute;
+	background-color: rgba(0, 0, 0, 0.8);
+	padding: 0;
+}
+
+.displayBlock {
+	display: block !important;
+}
+
+.displayHide {
+	display: none;
+}
+
+.addMargin {
+	margin-top: 10px;
+}
+
+.title {
+	text-transform: uppercase;
+	letter-spacing: 4px;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.displayFlex {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+/* navbar */
+nav {
+	font-family: 'Archivo Narrow', sans-serif;
+	z-index: 190;
+	position: fixed;
+	width: 100%;
+	padding: 10px 0;
+	transition:500ms ease;
+	top: 0;
+	right: 0;
+	left: 0;
+}
+
+nav.scrolled {
+	background:#000;
+	position:fixed;
+
+}
+
+.navbar-logo {
+	float: left;
+	padding-left: 10px;
+}
+
+.navbar-logo-link {
+	display: inline-block;
+	width: 140px;
+	height: 70px;
+}
+
+.navbar-logo-link:after {
+    content: url('../images/logo_small_black.png');
+}
+
+.navbar-logo-link.scrolled:after {
+    content: url('../images/logo_small_white.png');
+}
+
+#navbar-logo-img {
+	display: none;
+}
+
+.navbar-insta-phone {
+	float: right;
+}
+
+.navbar-insta-link {
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	margin: 0 10px;
+}
+
+#navbar-insta-img {
+	content: url('../images/Instagram_Glyph_Gradient.svg');
+}
+
+.navbar-links {
+	display: none;
+	clear: both;
+}
+
+.navbar-extra {
+	display: none;
+}
+
+.navbar-toggler {
+	float: right;
+	line-height: 1;
+	background: white;
+	border: 1px solid #fff;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	margin-right: 10px;
+	margin-top: 4px;
+	cursor: pointer;
+}
+
+.navbar-toggler-icon {
+	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    display: inline-block;
+    width: 40px;
+    height: 30px;
+    vertical-align: middle;
+    content: "";
+    background-size: 100% 100%;
+    margin: 5px 0;
+}
+
+.navbar-list {
+	list-style: none;
+}
+
+.navbar-item {
+	height: 100%;
+	font-size: 25px;
+	padding: 10px 0;
+}
+
+.navbar-link {
+	color: white;
+	text-decoration: none;
+}
+
+/* header */
+header {
+	background-image: url('../images/header_mobile.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+}
+
+.phone-mobile-only {
+	margin-bottom: 40px;
+}
+
+.phone-mobile-only span.phone-number {
+	padding: 10px 10px 10px 30px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	background: white url('../images/_ionicons_svg_ios-call.svg') no-repeat 5% center;
+	width: auto;
+	background-size: 20px auto;
+}
+
+.phone-mobile-only a:link {
+	text-decoration: none;
+	color: #000;
+}
+
+.phone-mobile-only a:visited {
+	text-decoration: none;
+	color: #000;
+}
+
+/* sections */
+
+section {
+	margin:0;
+}
+
+#horario .container,
+#comollegar .container,
+#productos .container {
+	padding: 1em;
+	position: relative;
+}
+
+#servicios .container {
+	padding: 1em 1em 0 1em;
+	position: relative;
+}
+
+#contacto .container {
+	padding: 0 1em 1em 1em;
+	position: relative;
+}
+
+	/* Horario */
+#horario h1 {
+	color: #666;
+	margin: 2em;
+}
+
+#horario .col1 {
+	text-align: center;
+	width: 100%;
+}
+
+#horario .col2 {
+	display: none;
+}
+
+	/* Como llegar */
+#comollegar {
+	margin-top: 40px;
+}
+
+#comollegar .container {
+	background-image: url('../images/section_bg.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#comollegar .carousel {
+	background: #e7e7e7;
+	padding: 40px 0;
+	/*display: none;*/
+}
+
+#comollegar .slick {
+	width: 70%;
+	margin: 0 auto;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    color: rgb(174, 174, 174) !important; 
+}
+
+#comollegar .carousel img {
+	width: 250px;
+	height: 188px;
+	margin: 0 auto;
+}
+
+#comollegar h1 {
+	color: #000;
+	margin: 2em;
+}
+
+#comollegar .col1 {
+	text-align: center;
+}
+
+#comollegar .col2 {
+	margin-top: 50px;
+	text-align: center;
+}
+
+#comollegar #map {
+	width: 300px;
+	height: 160px;
+}
+
+	/* Productos */
+#productos h1 {
+	color: #666;
+	margin: 2em;
+}
+
+.flexLogos {
+	display: none;
+}
+
+.flexLogosMini {
+	margin: 0 auto;
+	justify-content: center;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	width: 70%;
+}
+
+.logo_producto {
+	padding: 15px;
+}
+
+	/* Servicios */
+#servicios h1 {
+	color: #666;
+	margin: 2em;
+}
+
+#servicios .col1 {
+	text-align: center;
+}
+
+#servicios .col1 img {
+	width: 150px;
+	height: 202px;
+}
+
+#servicios .col2 {
+	width: 100%;
+}
+
+	/* Contacto */
+#contacto h1 {
+	color: #666;
+	margin: 2em;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+}
+
+#contacto .col1 {
+	text-align: left;
+}
+
+#contacto .form-group {
+	margin-bottom: 1rem;
+}
+
+#contacto .form-control {
+	background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    box-sizing: border-box;
+    padding: 10px;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    width: 100%;
+}
+
+#contacto .error {
+	background: #eea1a1 !important;
+	color: #cb2d2d;
+}
+
+#contacto .form-send {
+	background: rgb(5, 180, 231);
+	color: #fff;
+	border: 0;
+	width: 100%;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	font-weight: 400;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	padding: .375rem .75rem;
+	font-size: 1rem;
+	line-height: 1.5;
+	cursor: pointer;
+	display: block;
+	-webkit-appearance: button;
+}
+
+#contacto .sending {
+	background: #bfbfbf !important;
+}
+
+#contacto .sent {
+	background: rgb(5, 231, 171) !important;
+}
+
+#contacto .captcha-control {
+	width: 100%; 
+	margin-left: 20px;
+}
+
+/* Footer */
+footer {
+	background: #333;
+	color: white;
+	padding: 20px;
+	margin-top: 24px;
+}
