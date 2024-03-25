@@ -130,7 +130,7 @@ nav.scrolled {
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
-	background: white url('../images/_ionicons_svg_ios-call.svg') no-repeat 5% center;
+	background: white url('../images/ionicons_svg_ios-call.svg') no-repeat 5% center;
 	width: auto;
 	background-size: 20px auto;
 }
